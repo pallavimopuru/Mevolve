@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+/* roboto font family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body {
+  line-height: 20px;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.d-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+.align-end {
+  display: flex;
+  justify-content: end;
+}
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.blue-btn {
+  background: #1da1f2;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 63px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+  margin: 4px;
+  cursor: pointer;
+}
+.bg-oneapp-subheading {
+  font-weight: 500;
+  font-size: 16px;
+}
+.page-top {
+  margin-top: 20px;
+}
+@media screen and (max-width: 480px) {
+
+  .blue-btn {
+    font-size: 14px;
+    padding: 12px 61px;
+  }
+}

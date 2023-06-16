@@ -1,0 +1,36 @@
+<header class="container-fluid">
+  <div class="header-content">
+    <div class="logo"><b>Me</b><span>volve</span></div>
+    <div>
+      <!-- mobile-toggle -->
+      <div class="mobile-menu-items">
+        <i class="fa-solid" [class.fa-bars]="!menuopen" [class.fa-times]="menuopen" (click)="togglemenu()"></i>
+
+      </div>
+
+      <!-- mobile-toggle <i class="fa-regular fa-xmark"></i>-->
+
+      <div class="menu">
+        <div  (click)="setActive('Home')" [class.after-click-menu]="isActive('Home')">Home</div>
+        <div (click)="setActive('Features')" [class.after-click-menu]="isActive('Features')" >Features</div>
+        <div (click)="setActive('Pricing')" [class.after-click-menu]="isActive('Pricing')" >Pricing</div>
+        <div (click)="setActive('Contact us')" [class.after-click-menu]="isActive('Contact us')" >Contact us</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="toggle-div" [hidden]="!menuopen">
+    <div class="mobile-menu-items">
+      <div>Home</div>
+      <hr>
+      <div>Features</div>
+      <hr>
+      <div>Pricing</div>
+      <hr>
+      <div>Contact us</div>
+
+    </div>
+
+  </div>
+</header>
+
